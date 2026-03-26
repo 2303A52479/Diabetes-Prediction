@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Research Papers</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="dashboard-body">
+
+<div class="dashboard-container">
+
+  <h1>📄 Research Papers</h1>
+
+  <!-- UPLOAD FORM -->
+  <div class="upload-box">
+    <h2>Upload New Paper</h2>
+
+    <form action="/papers/create" method="POST" enctype="multipart/form-data">
+      <input name="title" placeholder="Title" required />
+      <input name="authors" placeholder="Authors" required />
+      <input name="category" placeholder="Category" required />
+      <input name="year" placeholder="Year" required />
+      <input name="keywords" placeholder="Keywords" />
+      <textarea name="abstract" placeholder="Abstract"></textarea>
+
+      <input type="file" name="pdf" required />
+
+      <button type="submit">Upload Paper</button>
+    </form>
+  </div>
+
+  <!-- PAPERS LIST -->
+  <div class="recent">
+    <h2>📚 All Papers</h2>
+
+    <% if (recentPapers.length === 0) { %>
+      <p>No papers uploaded yet</p>
+    <% } else { %>
+      <% recentPapers.forEach(p => { %>
+        <div class="paper-card">
+          <h3><%= p.title %></h3>
+          <p><strong>Authors:</strong> <%= p.authors %></p>
+          <p><%= p.category %> | <%= p.year %></p>
+
+          <a href="/uploads/<%= p.pdf %>" target="_blank">📥 View PDF</a>
+          <a href="/papers/delete/<%= p._id %>" class="delete">🗑 Delete</a>
+        </div>
+      <% }) %>
+    <% } %>
+  </div>
+
+  <!-- BACK BUTTON -->
+  <div class="actions">
+    <a href="/dashboard" class="btn">⬅ Back to Dashboard</a>
+  </div>
+
+</div>
+
+</body>
+</html>

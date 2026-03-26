@@ -1,0 +1,260 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY (GLOBAL DARK MODE) */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-container {
+    width: 340px;
+    margin: 120px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(30, 41, 59, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: #cbd5e1;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    transform: scale(1.05);
+}
+
+.bottom-text {
+    margin-top: 15px;
+    color: #94a3b8;
+}
+
+.bottom-text a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard-body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.dashboard-container {
+    width: 85%;
+    max-width: 750px;
+    margin: 40px auto;
+    background: rgba(30, 41, 59, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+/* HEADINGS */
+.dashboard-container h1 {
+    color: #f8fafc;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.dashboard-container h3 {
+    color: #cbd5f5;
+    margin-bottom: 5px;
+}
+
+/* ACTIONS */
+.actions {
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    margin: 10px;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.logout {
+    background: #ef4444;
+}
+
+/* DATASET BOX */
+.dataset-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #334155;
+    border-radius: 10px;
+}
+
+/* DATASET LINK (VIOLET) */
+.dataset-box a {
+    color: #a855f7;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.dataset-box a:hover {
+    color: #c084fc;
+    text-decoration: underline;
+}
+
+/* ===== FORMS (PREDICTION) ===== */
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background: #0f172a;
+    color: white;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #22c55e, #4ade80);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
+
+/* ===== RESULT PAGE ===== */
+.result-box {
+    width: 350px;
+    margin: 100px auto;
+    background: rgba(30, 41, 59, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.6);
+}
+
+.result-box h1 {
+    color: #22c55e;
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ===== PAPERS PAGE ===== */
+.upload-box {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.upload-box input,
+.upload-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+}
+
+.paper-card {
+    background: #334155;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.paper-card h3 {
+    color: #38bdf8;
+}
+
+.paper-card a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #93c5fd;
+}
+
+.paper-card a:hover {
+    text-decoration: underline;
+}
+
+.delete {
+    color: #ef4444;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    .dashboard-container,
+    .login-container,
+    .result-box {
+        width: 90%;
+    }
+}
